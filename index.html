@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<!--Set as html, and specify the language attribute as english for SEO -->
+<html lang="en">
+<!-- 
+	This is a comment
+	Author: Skylar Stickley
+	Created: 1/7/16
+	Updated: 1/21/16
+ -->
+<!-- ====HEAD==== -->
+	<head>
+		<title>My Site</title>
+
+		<!-- Metadata= Information about the doc. Like photo containing what type of camera you took it with. -->
+		<meta charset="utf-8">
+
+		<!-- Set meta's content. Usually this is the author of the page, not the programmer -->
+		<meta name="author" content="Skylar Stickley">
+		<meta name="description" content="My First Web Page">
+		<!-- Remember: Google doesnt base it's search off of this. It will scan your content.
+		 Use a word 4 times in a page to make it more likely to be at the top of the results -->
+		<meta name="keywords" content="page,first,web,web page, practice, example">
+		
+		<link href="css/grid.css" rel="stylesheet" type ="css/text">
+		<link href="css/styles.css" rel="stylesheet" type ="css/text">
+		<script src="js/quizChk"></script>
+		
+		
+	</head>
+<!-- ====END HEAD==== -->
+
+<!-- ====BODY====-->
+	<body class="grid">
+		<header class="group">
+			<h1 class="col col-100">My Trivia Game</h1>
+			<p class="col col-100">Instructions</p>
+		</header>
+		<main class = "group">
+			<form class="group">
+			<!--Question 1-->
+				<section class="col col-100">
+				
+					<p class="col col-100">This is question one</p>
+					<!--name=What set of radio buttons this button is tied to -->
+					<input type ="radio" class="col col-5"
+						name="q1" id="q1-a" value="correct">
+					<label class="col col-95" for="q1-a">
+					A) This is the correct answer
+					</label>
+					
+					<!--name=What set of radio buttons this button is tied to -->
+					<input type ="radio" class="col col-5"
+						name="q1" id="q1-b" value="incorrect">
+					<label class="col col-95" for="q1-b">
+					B) This is the wrong answer
+					</label>
+					
+					<!--name=What set of radio buttons this button is tied to -->
+					<input type ="radio" class="col col-5"
+						name="q1" id="q1-c" value="incorrect">
+					<label class="col col-95" for="q1-c">
+					C) This is the incorrect answer
+					</label>
+					
+					
+				</section>
+			<!--Question 2-->
+				<section>
+					<p class="col col-100">This is question two </p>
+				<!--name=What set of radio buttons this button is tied to -->
+					<input type ="radio" class="col col-5"
+						name="q2" id="q2-a" value="incorrect">
+					<label class="col col-95" for="q2-a">
+					A) This is the wrong answer
+					</label>
+			
+					
+					<!--name=What set of radio buttons this button is tied to -->
+					<input type ="radio" class="col col-5"
+						name="q2" id="q2-b" value="correct">
+					<label class="col col-95" for="q2-b">
+					B) This is the correct answer
+					</label>
+					
+					
+					
+					<!--name=What set of radio buttons this button is tied to -->
+					<input type ="radio" class="col col-5"
+						name="q2" id="q2-c" value="incorrect">
+					<label class="col col-95" for="q2-c">
+					C) This is the incorrect answer
+					</label>
+				</section>
+				
+				<!--Submit Button -->
+				<button type="submit" onclick="chkQuiz();">Check my Score</button>
+			</form>
+		</main>
+		<footer class = "group">
+			<h5 class="col col-100">Copyright &copy; 2016 -Designed by <a href="mailto:skylar_stickley@yahoo.com">Skylar Stickley</a></h5>
+		</footer>
+	</body>
+<!-- ====END BODY====-->
+
+</html>
